@@ -68,7 +68,7 @@ body{
   background-repeat: no-repeat;
 
   margin: 20px auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: beige;
   border-radius: 8px;
 }
@@ -85,20 +85,49 @@ body{
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.banner-input-field input,.banner-input-field select,.banner-input-field button{
+.banner-input-field input,.banner-input-field select{
   width: 174px;
   height: 52px;
   border-radius: 8px;
   background: rgb(255, 255, 255);
   border: none;
+  margin: 10px;
+ font-size: 16px;
+ font-weight: 400;
+ outline: none;
+ margin-top: 14px;
+}
+.banner-input-field{
+  /* margin-top: 80px;
+  margin-bottom: 30px; */
+  margin: 50px auto;
+  width: 800px;
+  height: 84px;
+  border-radius: 8px;
+background: rgba(255, 255, 255, 0.3);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.input-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -60px;
+
+}
+button{
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #FF5400;
+  border: none;
  margin: 10px;
  font-size: 16px;
  font-weight: 400;
  outline: none;
- margin-top: 60px;
-}
-button{
-  background-color: rgb(255, 84, 0);
+ color: rgb(255, 255, 255);
 }
 
 
@@ -109,6 +138,11 @@ button{
     flex-direction: column;
     gap:10px;
     margin-bottom: 10px;
+  }
+  .banner-input-field{
+    flex-direction: column;
+    width: 255px;
+    height: 252px;
   }
   .ul-link :hover{
     background-color: beige;
