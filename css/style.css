@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Mulish", sans-serif;
+}
+/* navbar style */
+.nav-container{
+  width: 90%;
+ display: flex; 
+ /* border: 1px solid red; */
+ margin: 20px auto;
+ justify-content: space-between;
+
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo img{
+  width: 60px;
+  height: 56px;
+}
+.logo-title{
+  margin-left: 20px;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul-link{
+  display: flex;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  gap: 20px;
+  color: #424247;
+}
+.ul-link a{
+  text-decoration: none;
+ 
+}
+.travel{
+  color: #FF5400;
+}
+.home{
+  color: #FF5400;
+}
+/* banner style */
+.banner-container{
+  width: 90%;
+   
+  background-image: linear-gradient(180deg,rgba(19, 19, 24, 0.8)0%,rgba(19, 19, 24, 0) 100%),url(../Images/banner.png);
+  padding: 7rem 0;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 20px auto;
+  border: 1px solid red;
+  background-color: beige;
+  border-radius: 8px;
+}
+.banner-description{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 50px;
+}
+.banner-title{
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.banner-input-field input,.banner-input-field select,.banner-input-field button{
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border: none;
+ margin: 10px;
+ font-size: 16px;
+ font-weight: 400;
+ outline: none;
+ margin-top: 60px;
+}
+button{
+  background-color: rgb(255, 84, 0);
+}
+
+
+
+/* small or mobile device responsive */
+@media screen and (max-width:576px) {
+  .nav-container,.ul-link{
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 10px;
+  }
+  .ul-link :hover{
+    background-color: beige;
+  }
+}
+/* medium or tablet device responsive */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .nav-container,.ul-link{
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 10px;
+  }
+}
